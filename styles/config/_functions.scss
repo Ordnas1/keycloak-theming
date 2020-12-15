@@ -1,0 +1,4 @@
+@function elevation($overlayColor, $opacity){
+  @return linear-gradient(0deg, rgba($overlayColor, $opacity),
+    rgba($overlayColor, $opacity)), $surface-color;
+}

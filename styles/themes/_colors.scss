@@ -1,0 +1,46 @@
+// Elevations
+
+$elevations: (
+  0: 0,
+  1:0.05,
+  2:0.07,
+  3:0.08,
+  4:0.09,
+  6:0.11,
+  8:0.12,
+  12:0.14,
+  16:0.15,
+  24:0.16,
+  );
+
+  
+  @each $name, $value in $elevations {
+    .dp-#{$name}{
+	  background: elevation($light-color, $value);
+    }
+  }
+  
+// .dp-0{
+//   background-color: $surface;
+// }
+
+// .dp-1{
+//   background: elevation($light-color, 0.5);
+// }
+
+// .dp-2{
+//   background: elevation($light-color, 0.7);
+// }
+
+// .dp-3{
+//   background: elevation($light-color, 0.8);
+// }
+
+// .dp-4{
+//   background: elevation($light-color, 0.9);
+// }
+
+// Shadows
+.material-shadow{
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.14), 0px 6px 30px rgba(0, 0, 0, 0.12), 0px 8px 10px rgba(0, 0, 0, 0.2);
+}
