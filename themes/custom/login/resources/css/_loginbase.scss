@@ -59,6 +59,7 @@ a#kc-current-locale-link {
 /* a#kc-current-locale-link:hover {
     background-color: rgba(0,0,0,0.2);
 } */
+
 a#kc-current-locale-link::after {
   content: "\2c5";
   margin-left: 4px;
@@ -133,6 +134,7 @@ div.kc-logo-text span {
 /* #kc-content-wrapper {
     overflow-y: hidden;
 } */
+
 #kc-info {
   padding-bottom: 200px;
   margin-bottom: -200px;
@@ -160,6 +162,7 @@ div.kc-logo-text span {
 }
 
 /* TOTP */
+
 .subtitle {
   text-align: right;
   margin-top: 30px;
@@ -192,6 +195,7 @@ ul#kc-totp-supported-apps {
 }
 
 /* OAuth */
+
 #kc-oauth h3 {
   margin-top: 0;
 }
@@ -224,6 +228,7 @@ ul#kc-totp-supported-apps {
 }
 
 /* Social */
+
 #kc-social-providers ul {
   padding: 0;
 }
@@ -247,15 +252,15 @@ ul#kc-totp-supported-apps {
   background-color: black;
   visibility: hidden;
   color: #fff;
+
   min-width: 130px;
   text-align: center;
   border-radius: 2px;
-  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
-          box-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
   padding: 5px;
+
   position: absolute;
   opacity: 0;
-  -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
 
@@ -289,17 +294,14 @@ a.zocial {
   border-radius: 0;
   white-space: normal;
 }
-
 .zocial:before {
   border-right: 0;
   margin-right: 0;
 }
-
 .zocial span:before {
   padding: 7px 10px;
   font-size: 14px;
 }
-
 .zocial:hover {
   background: #ededed !important;
 }
@@ -313,8 +315,8 @@ a.zocial {
 .zocial.twitter {
   background-image: none;
   border: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+
+  box-shadow: none;
   text-shadow: none;
 }
 
@@ -322,7 +324,6 @@ a.zocial {
 .zocial.microsoft:before {
   content: "\f15d";
 }
-
 .zocial.stackoverflow:before {
   color: inherit;
 }
@@ -332,9 +333,11 @@ a.zocial {
     position: absolute;
     width: 100%;
   }
+
   .login-pf .container {
     padding-right: 80px;
   }
+
   #kc-locale {
     position: relative;
     text-align: right;
@@ -346,12 +349,14 @@ a.zocial {
   .login-pf body {
     background: white;
   }
+
   #kc-header {
     padding-left: 15px;
     padding-right: 15px;
     float: none;
     text-align: left;
   }
+
   #kc-header-wrapper {
     font-size: 16px;
     font-weight: bold;
@@ -359,15 +364,18 @@ a.zocial {
     color: #72767b;
     letter-spacing: 0;
   }
+
   div.kc-logo-text {
     margin: 0;
     width: 150px;
     height: 32px;
     background-size: 100%;
   }
+
   #kc-form {
     float: none;
   }
+
   #kc-info-wrapper {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     margin-top: 15px;
@@ -375,14 +383,17 @@ a.zocial {
     padding-left: 0px;
     padding-right: 15px;
   }
+
   #kc-social-providers li {
     display: block;
     margin-right: 5px;
   }
+
   .login-pf .container {
     padding-top: 15px;
     padding-bottom: 15px;
   }
+
   #kc-locale {
     position: absolute;
     width: 200px;
@@ -391,6 +402,7 @@ a.zocial {
     text-align: right;
     z-index: 9999;
   }
+
   #kc-logo-wrapper {
     background-size: 100px 21px;
     height: 21px;
@@ -423,21 +435,13 @@ a.zocial {
 
 .login-pf-page {
   /* margin-top: 20px; */
+
   /* width: 40%; */
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding-top: 0;
 }
 
@@ -447,8 +451,7 @@ a.zocial {
   padding: 0 20px;
   max-width: 500px;
   border-top: 0;
-  -webkit-box-shadow: 0 0 0;
-          box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
 }
 
 /*tablet*/
@@ -460,7 +463,6 @@ a.zocial {
     padding: 20px 20px 30px 20px;
   }
 }
-
 @media (max-width: 767px) {
   .login-pf-page .card-pf {
     max-width: none;
@@ -477,7 +479,6 @@ a.zocial {
   font-size: 15px;
   color: #72767b;
 }
-
 #kc-content-wrapper .row {
   margin-left: 0;
   margin-right: 0;
@@ -500,7 +501,6 @@ a.zocial {
 .login-pf-page .login-pf-social-link {
   margin-bottom: 25px;
 }
-
 .login-pf-page .login-pf-social-link a {
   padding: 2px 0;
 }
@@ -549,4 +549,3 @@ form#kc-select-back-form div.login-pf-social-section {
   width: 700px;
   background-color: #bb86fc;
 }
-/*# sourceMappingURL=login.css.map */
