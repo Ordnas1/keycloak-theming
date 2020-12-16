@@ -1,3 +1,43 @@
+h1 {
+  margin: 0;
+}
+
+.font-header-1 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  font-size: 64px;
+}
+
+.font-header-2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.font-header-3 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.font-header-4 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+}
+
+.font-regular {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: regular;
+  font-size: 16px;
+}
+
+.font-small {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: regular;
+  font-size: 12px;
+}
+
 .dp-0 {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0))), #121212;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), #121212;
@@ -48,8 +88,127 @@
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.16)), #121212;
 }
 
+.bg-primary-900 {
+  background-color: #23036A;
+}
+
+.bg-primary-800 {
+  background-color: #30009C;
+}
+
+.bg-primary-700 {
+  background-color: #3700B3;
+}
+
+.bg-primary-600 {
+  background-color: #5600E8;
+}
+
+.bg-primary-500 {
+  background-color: #6200EE;
+}
+
+.bg-primary-400 {
+  background-color: #7F39FB;
+}
+
+.bg-primary-300 {
+  background-color: #985EFF;
+}
+
+.bg-primary-200 {
+  background-color: #BB86FC;
+}
+
+.bg-primary-100 {
+  background-color: #DBB2FF;
+}
+
+.bg-primary-050 {
+  background-color: #F2E7FE;
+}
+
+.bg-secondary-900 {
+  background-color: #005457;
+}
+
+.bg-secondary-800 {
+  background-color: #017374;
+}
+
+.bg-secondary-700 {
+  background-color: #018786;
+}
+
+.bg-secondary-600 {
+  background-color: #019592;
+}
+
+.bg-secondary-500 {
+  background-color: #01A299;
+}
+
+.bg-secondary-400 {
+  background-color: #00B3A6;
+}
+
+.bg-secondary-300 {
+  background-color: #00C4B4;
+}
+
+.bg-secondary-200 {
+  background-color: #03DAC5;
+}
+
+.bg-secondary-100 {
+  background-color: #70EFDE;
+}
+
+.bg-secondary-050 {
+  background-color: #C8FFF4;
+}
+
 .material-shadow {
   -webkit-box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.14), 0px 6px 30px rgba(0, 0, 0, 0.12), 0px 8px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.14), 0px 6px 30px rgba(0, 0, 0, 0.12), 0px 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.high-em {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 0;
+}
+
+.login-box {
+  width: 945px;
+  height: 524px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.login-title, .login-form {
+  width: 50%;
+}
+
+.form--card {
+  height: 100%;
+  padding: 52px;
 }
 /*# sourceMappingURL=login.css.map */
