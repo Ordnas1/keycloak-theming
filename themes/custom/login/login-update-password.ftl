@@ -17,12 +17,12 @@
 
                 <div class="${properties.kcFormGroupClass!} mb-20">
                     <label for="password-new" class="${properties.kcLabelClass!}">${msg("passwordNew")}</label>
-                    <input type="password" id="password-new" name="password-new" class="${properties.kcInputClass!}" autofocus autocomplete="new-password" />
+                    <input type="password" id="password-new" name="password-new" class="${properties.kcInputClass!}" autofocus autocomplete="new-password" placeholder="********" />
                 </div>
 
                 <div class="${properties.kcFormGroupClass!} mb-20">
                     <label for="password-confirm" class="${properties.kcLabelClass!}">${msg("passwordConfirm")}</label>
-                    <input type="password" id="password-confirm" name="password-confirm" class="${properties.kcInputClass!}" autocomplete="new-password" />
+                    <input type="password" id="password-confirm" name="password-confirm" class="${properties.kcInputClass!}" autocomplete="new-password" placeholder="********" />
                 </div>
             </main>
 
