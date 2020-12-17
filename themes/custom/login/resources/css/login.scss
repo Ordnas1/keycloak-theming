@@ -1,5 +1,8 @@
 @import "../../../../../styles/main";
 
+.debug{
+	outline: 1px solid red;
+}
 
 .body {
 	height: 100vh;
@@ -16,12 +19,74 @@
 	display: flex;
 }
 
-.login-title, .login-form {
+.login-title{
 	width: 50%;
 }
 
-.form--card {
-	height: 100%;
-	padding: 52px;
+.input{
+	display: inline-block;
+	border:none;
+	outline: none;
+	border-bottom:1px solid $high-emphasis-surface;
+	padding: .7rem 0;
+	color: $high-emphasis-surface;
+
+	&::placeholder{
+		color: $disable-emphasis-surface;
+	}
 }
- 
+
+
+.login{
+
+	&_form-container{
+		width: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&_form{
+		height: 370px;
+		width: 378px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&_form-group{
+		display: flex;
+		flex-direction: column;
+	}
+
+	&_title{}
+
+	&_description{
+		margin-top: .8rem;
+	}
+
+	&_footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+	}
+
+	&_btn{
+		display: inline-block;
+		padding: 1.4rem 4rem;
+		text-align: center;
+		border-radius: 5px;
+		text-transform: uppercase;
+		color: $high-emphasis-primary;
+		border: none;
+		font-size: 1.6rem;
+		font-weight: 600;
+	}
+
+	&_forgot-pw{
+
+		&:hover {
+			color: $high-emphasis-surface;
+		}
+	}
+}

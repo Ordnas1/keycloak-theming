@@ -19,6 +19,10 @@
   }
 }
 
+.bg-transparent{
+  background-color: $transparent;
+}
+
 // Shadows
 .material-shadow{
   box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.14), 0px 6px 30px rgba(0, 0, 0, 0.12), 0px 8px 10px rgba(0, 0, 0, 0.2);

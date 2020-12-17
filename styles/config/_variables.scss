@@ -1,18 +1,13 @@
 // Colors
 $light-color: rgb(255,255,255);
-$high-emphasis-surface: rgba(255,255,255,0.87);
+$high-emphasis-surface: rgba($light-color, 0.87);
+$medium-emphasis-surface: rgba($light-color, 0.60);
+$disable-emphasis-surface: rgba($light-color, 0.38);
 
-// Primary
-// $primary-900: #23036A;
-// $primary-800: #30009C;
-// $primary-700: #3700B3;
-// $primary-600: #5600E8;
-// $primary-500: #6200EE;
-// $primary-400: #7F39FB;
-// $primary-300: #985EFF;
-// $primary-200: #BB86FC;
-// $primary-100: #DBB2FF;
-// $primary-050: #F2E7FE;
+$dark-color: rgb(0, 0, 0);
+$high-emphasis-primary: rgba($dark-color, 1);
+$medium-emphasis-primary: rgba($dark-color, 0.74);
+$disable-emphasis-primary: rgba($dark-color, 0.38);
 
 $primaryColors: (
   primary-900: #23036A,
@@ -26,18 +21,6 @@ $primaryColors: (
   primary-100: #DBB2FF,
   primary-050: #F2E7FE
 );
-
-// Secondary
-// $secondary-900: #005457;
-// $secondary-800: #017374;
-// $secondary-700: #018786;
-// $secondary-600: #019592;
-// $secondary-500: #01A299;
-// $secondary-400: #00B3A6;
-// $secondary-300: #00C4B4;
-// $secondary-200: #03DAC5;
-// $secondary-100: #70EFDE;
-// $secondary-050: #C8FFF4;
 
 $secondaryColors:(
   secondary-900: #005457,
@@ -55,6 +38,7 @@ $secondaryColors:(
 // Background & surface
 $background-color: #121212;
 $surface-color:#121212;
+$transparent: transparent;
 
 // Breakpoints
 $breakpoints:(
