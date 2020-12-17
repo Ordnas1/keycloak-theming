@@ -6,11 +6,10 @@
             <header class="${properties.gmwLoginHeader}">
                 <h1 id="kc-page-title" class="${properties.gmwLoginTitle!}">${msg("emailForgotTitle")}</h1>
                 <p class="${properties.gmwLoginDescription}">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum iaculis augue vitae sollicitudin. 
-                        
+                   ${msg("emailInstruction")}     
                 </p>
             </header>
-            <div class="${properties.kcFormGroupClass!}">
+            <main class="${properties.kcFormGroupClass!}">
                 
                 <label for="username" class="${properties.kcLabelClass!}"><#if !realm.loginWithEmailAllowed>${msg("username")}<#elseif !realm.registrationEmailAsUsername>${msg("usernameOrEmail")}<#else>${msg("email")}</#if></label>
                 
@@ -21,20 +20,20 @@
                     <input type="text" id="username" name="username" class="${properties.kcInputClass!}" autofocus/>
                 </#if>
                 
-            </div>
-            <div class="${properties.kcFormGroupClass!} ${properties.kcFormSettingClass!}">
-                <div id="kc-form-options" class="${properties.kcFormOptionsClass!}">
-                    <div class="${properties.kcFormOptionsWrapperClass!}">
-                        <span><a href="${url.loginUrl}">${kcSanitize(msg("backToLogin"))?no_esc}</a></span>
+            </main>
+            <footer class="${properties.gmwLoginFooter}">
+                <div id="kc-form-options" class="">
+                    <div class="">
+                        <span><a class="${properties.gmwLoginForgotPassword}" href="${url.loginUrl}">${kcSanitize(msg("backToLogin"))?no_esc}</a></span>
                     </div>
                 </div>
 
-                <div id="kc-form-buttons" class="${properties.kcFormButtonsClass!}">
-                    <input class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}" type="submit" value="${msg("doSubmit")}"/>
+                <div id="kc-form-buttons">
+                    <input class="${properties.gmwLoginBtn!} " type="submit" value="${msg("doSubmit")}"/>
                 </div>
-            </div>
+            </footer>
         </form>
     <#elseif section = "info" >
-        ${msg("emailInstruction")}
+        
     </#if>
 </@layout.registrationLayout>
