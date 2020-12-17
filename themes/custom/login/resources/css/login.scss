@@ -1,123 +1,132 @@
 @import "../../../../../styles/main";
 
-.debug{
-	outline: 1px solid red;
+.debug {
+  outline: 1px solid red;
 }
 
 .body {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding-top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
 }
 
 .login-box {
-	width: 945px;
-	height: 524px;
-	display: flex;
+  width: 945px;
+  height: 524px;
+  display: flex;
 }
-
-.aside{
-	width: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	&_title{
-		display: block;
-		line-height: 0.9;
-	}
-
-	&_subtitle{}
-}
-
-.input{
-	display: inline-block;
-	border:none;
-	outline: none;
-	border-bottom:1px solid $high-emphasis-surface;
-	padding: .7rem 0;
-	color: $high-emphasis-surface;
-
-	&::placeholder{
-		color: $disable-emphasis-surface;
-	}
-}
-
 
 .aside {
-	display: flex;
-	flex-direction: column;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &_title {
+    display: block;
+    line-height: 0.9;
+  }
+
+  &_subtitle {
+  }
 }
 
-.login{
+.input {
+  display: inline-block;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid $high-emphasis-surface;
+  padding: 0.7rem 0;
+  color: $high-emphasis-surface;
 
-	&_form-container{
-		width: 50%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+  &::placeholder {
+    color: $disable-emphasis-surface;
+  }
+}
 
-	&_form{
-		height: 370px;
-		width: 378px;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-	}
+.aside {
+  display: flex;
+  flex-direction: column;
+}
 
-	&_form-group{
-		display: flex;
-		flex-direction: column;
-	}
+.login {
+  &_form-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-	&_title{}
+  &_form {
+    height: 370px;
+    width: 378px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-	&_description{}
+  &_form-group {
+    display: flex;
+    flex-direction: column;
+  }
 
-	&_footer {
-		display: flex;
-		justify-content: space-between;
-		align-items: baseline;
-	}
+  &_title {
+  }
 
-	&_btn{
-		display: inline-block;
-		padding: 1.4rem 4rem;
-		text-align: center;
-		border-radius: 5px;
-		text-transform: uppercase;
-		color: $high-emphasis-primary;
-		border: none;
-		font-size: 1.6rem;
-		font-weight: 600;
-	}
+  &_description {
+  }
 
-	&_forgot-pw{
+  &_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 
-		&:hover {
-			color: $high-emphasis-surface;
-		}
-	}
+  &_btn {
+    display: inline-block;
+    padding: 1.4rem 4rem;
+    text-align: center;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: $high-emphasis-primary;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  &_forgot-pw {
+    &:hover {
+      color: $high-emphasis-surface;
+    }
+  }
 }
 
 .alert {
+  &_content {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+  }
+}
 
-	&_content {
-		display: inline-block;
-		position: absolute;
-		left: 50%;
-		transform: translateX(-50%);
-		bottom: 20px;
-		text-align: center;
-		padding: 1.5rem 2rem;
-		border-radius: 5px;
-	}
+.pficon-error-circle-o,
+.pficon-warning-triangle-o,
+.pficon-ok,
+.pficon-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .pficon-error-circle-o:before {
-	color: #CF6679;
+  color: #cf6679;
 }
