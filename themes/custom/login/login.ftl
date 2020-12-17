@@ -10,7 +10,6 @@
                     <h1 id="kc-page-title" class="${properties.gmwLoginTitle!}">${msg("doLogIn")}</h1>
                     <p class="${properties.gmwLoginDescription}">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum iaculis augue vitae sollicitudin. 
-                        
                     </p>
                 </header>
                 <main>
