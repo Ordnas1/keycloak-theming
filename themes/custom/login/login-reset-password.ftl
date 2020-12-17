@@ -15,9 +15,9 @@
                 
                 
                 <#if auth?has_content && auth.showUsername()>
-                    <input type="text" id="username" name="username" class="${properties.kcInputClass!}" autofocus value="${auth.attemptedUsername}"/>
+                    <input type="text" id="username" name="username" class="${properties.kcInputClass!}" autofocus value="${auth.attemptedUsername}" placeholder='${msg("usernamePlaceholder")}'/>
                 <#else>
-                    <input type="text" id="username" name="username" class="${properties.kcInputClass!}" autofocus/>
+                    <input type="text" id="username" name="username" class="${properties.kcInputClass!}" autofocus placeholder='${msg("usernamePlaceholder")}'/>
                 </#if>
                 
             </main>
