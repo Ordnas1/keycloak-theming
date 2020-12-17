@@ -103,3 +103,21 @@
 		}
 	}
 }
+
+.alert {
+
+	&_content {
+		display: inline-block;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 20px;
+		text-align: center;
+		padding: 1.5rem 2rem;
+		border-radius: 5px;
+	}
+}
+
+.pficon-error-circle-o:before {
+	color: #CF6679;
+}

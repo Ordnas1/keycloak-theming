@@ -210,6 +210,14 @@ p {
   padding: 1rem;
 }
 
+.m-15 {
+  margin: 1.5rem;
+}
+
+.p-15 {
+  padding: 1.5rem;
+}
+
 .m-20 {
   margin: 2rem;
 }
@@ -312,6 +320,38 @@ p {
 
 .pl-10 {
   padding-left: 1rem;
+}
+
+.mt-15 {
+  margin-top: 1.5rem;
+}
+
+.pt-15 {
+  padding-top: 1.5rem;
+}
+
+.mr-15 {
+  margin-right: 1.5rem;
+}
+
+.pr-15 {
+  padding-right: 1.5rem;
+}
+
+.mb-15 {
+  margin-bottom: 1.5rem;
+}
+
+.pb-15 {
+  padding-bottom: 1.5rem;
+}
+
+.ml-15 {
+  margin-left: 1.5rem;
+}
+
+.pl-15 {
+  padding-left: 1.5rem;
 }
 
 .mt-20 {
@@ -493,5 +533,21 @@ p {
 
 .login_forgot-pw:hover {
   color: rgba(255, 255, 255, 0.87);
+}
+
+.alert_content {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 20px;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  border-radius: 5px;
+}
+
+.pficon-error-circle-o:before {
+  color: #CF6679;
 }
 /*# sourceMappingURL=login.css.map */

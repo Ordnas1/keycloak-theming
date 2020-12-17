@@ -139,12 +139,12 @@
                     <#-- App-initiated actions should not see warning messages about the need to complete the action -->
                     <#-- during login.                                                                               -->
                     <#if displayMessage && message?has_content && (message.type != 'warning' || !isAppInitiatedAction??)>
-                        <div class="alert alert-${message.type}">
+                        <div class="${properties.gmwAlertSnackbar}">
                             <#if message.type = 'success'><span class="${properties.kcFeedbackSuccessIcon!}"></span></#if>
                             <#if message.type = 'warning'><span class="${properties.kcFeedbackWarningIcon!}"></span></#if>
                             <#if message.type = 'error'><span class="${properties.kcFeedbackErrorIcon!}"></span></#if>
                             <#if message.type = 'info'><span class="${properties.kcFeedbackInfoIcon!}"></span></#if>
-                            <span class="kc-feedback-text high-em">${kcSanitize(message.summary)?no_esc}</span>
+                            <span class="pl-15 high-em">${kcSanitize(message.summary)?no_esc}</span>
                         </div>
                     </#if>
                     <#--  END ALERTS  -->

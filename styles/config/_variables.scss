@@ -35,6 +35,10 @@ $secondaryColors:(
   secondary-050: #C8FFF4
 );
 
+
+// Error
+$error-color: #CF6679;
+
 // Background & surface
 $background-color: #121212;
 $surface-color:#121212;
@@ -81,5 +85,6 @@ $spaceamounts: (
   0: 0px,
   5: 5px,
   10: 10px,
+  15: 15px,
   20: 20px
 );
