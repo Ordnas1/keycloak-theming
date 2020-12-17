@@ -186,6 +186,166 @@ p {
   color: rgba(255, 255, 255, 0.87);
 }
 
+.m-0 {
+  margin: 0rem;
+}
+
+.p-0 {
+  padding: 0rem;
+}
+
+.m-5 {
+  margin: 0.5rem;
+}
+
+.p-5 {
+  padding: 0.5rem;
+}
+
+.m-10 {
+  margin: 1rem;
+}
+
+.p-10 {
+  padding: 1rem;
+}
+
+.m-20 {
+  margin: 2rem;
+}
+
+.p-20 {
+  padding: 2rem;
+}
+
+.mt-0 {
+  margin-top: 0rem;
+}
+
+.pt-0 {
+  padding-top: 0rem;
+}
+
+.mr-0 {
+  margin-right: 0rem;
+}
+
+.pr-0 {
+  padding-right: 0rem;
+}
+
+.mb-0 {
+  margin-bottom: 0rem;
+}
+
+.pb-0 {
+  padding-bottom: 0rem;
+}
+
+.ml-0 {
+  margin-left: 0rem;
+}
+
+.pl-0 {
+  padding-left: 0rem;
+}
+
+.mt-5 {
+  margin-top: 0.5rem;
+}
+
+.pt-5 {
+  padding-top: 0.5rem;
+}
+
+.mr-5 {
+  margin-right: 0.5rem;
+}
+
+.pr-5 {
+  padding-right: 0.5rem;
+}
+
+.mb-5 {
+  margin-bottom: 0.5rem;
+}
+
+.pb-5 {
+  padding-bottom: 0.5rem;
+}
+
+.ml-5 {
+  margin-left: 0.5rem;
+}
+
+.pl-5 {
+  padding-left: 0.5rem;
+}
+
+.mt-10 {
+  margin-top: 1rem;
+}
+
+.pt-10 {
+  padding-top: 1rem;
+}
+
+.mr-10 {
+  margin-right: 1rem;
+}
+
+.pr-10 {
+  padding-right: 1rem;
+}
+
+.mb-10 {
+  margin-bottom: 1rem;
+}
+
+.pb-10 {
+  padding-bottom: 1rem;
+}
+
+.ml-10 {
+  margin-left: 1rem;
+}
+
+.pl-10 {
+  padding-left: 1rem;
+}
+
+.mt-20 {
+  margin-top: 2rem;
+}
+
+.pt-20 {
+  padding-top: 2rem;
+}
+
+.mr-20 {
+  margin-right: 2rem;
+}
+
+.pr-20 {
+  padding-right: 2rem;
+}
+
+.mb-20 {
+  margin-bottom: 2rem;
+}
+
+.pb-20 {
+  padding-bottom: 2rem;
+}
+
+.ml-20 {
+  margin-left: 2rem;
+}
+
+.pl-20 {
+  padding-left: 2rem;
+}
+
 .debug {
   outline: 1px solid red;
 }
@@ -216,8 +376,22 @@ p {
   display: flex;
 }
 
-.login-title {
+.aside {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aside_title {
+  display: block;
+  line-height: 0.9;
 }
 
 .input {
@@ -243,6 +417,16 @@ p {
 
 .input::placeholder {
   color: rgba(255, 255, 255, 0.38);
+}
+
+.aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .login_form-container {
@@ -281,10 +465,6 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.login_description {
-  margin-top: .8rem;
 }
 
 .login_footer {

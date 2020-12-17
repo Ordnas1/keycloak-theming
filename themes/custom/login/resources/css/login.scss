@@ -19,8 +19,18 @@
 	display: flex;
 }
 
-.login-title{
+.aside{
 	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&_title{
+		display: block;
+		line-height: 0.9;
+	}
+
+	&_subtitle{}
 }
 
 .input{
@@ -36,6 +46,11 @@
 	}
 }
 
+
+.aside {
+	display: flex;
+	flex-direction: column;
+}
 
 .login{
 
@@ -61,9 +76,7 @@
 
 	&_title{}
 
-	&_description{
-		margin-top: .8rem;
-	}
+	&_description{}
 
 	&_footer {
 		display: flex;

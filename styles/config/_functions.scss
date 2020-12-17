@@ -2,3 +2,11 @@
   @return linear-gradient(0deg, rgba($overlayColor, $opacity),
     rgba($overlayColor, $opacity)), $surface-color;
 }
+
+// ==================================================
+// CONVERT PIXEL TO REM
+// ==================================================
+@function pxToRem($size){
+  $convert: $size / 10px;
+  @return #{$convert}rem;
+}

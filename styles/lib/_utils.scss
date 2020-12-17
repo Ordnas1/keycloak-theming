@@ -1,0 +1,27 @@
+// ==================================================
+// MARGINS / PADDINGS
+// ==================================================
+@each $spaceName, $spaceValue in $spaceamounts {
+  .m-#{$spaceName} {
+    margin: pxToRem($spaceValue);
+  }
+
+  .p-#{$spaceName} {
+    padding: pxToRem($spaceValue);
+  }
+}
+
+// ==================================================
+// MARGIN AND PADDING TOP, RIGHT, BOTTOM, LEFT
+// ==================================================
+@each $spaceName, $spaceValue in $spaceamounts {
+  @each $side in $sides {
+    .m#{str-slice($side, 0, 1)}-#{$spaceName} {
+      margin-#{$side}: pxToRem($spaceValue);
+    }
+
+    .p#{str-slice($side, 0, 1)}-#{$spaceName} {
+      padding-#{$side}: pxToRem($spaceValue);
+    }
+  }
+}

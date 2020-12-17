@@ -74,3 +74,12 @@ $elevations: (
 // Fonts
 $generalFontFamily: 'Source Sans Pro', sans-serif;
 // $generalFontFamily: .....
+
+$sides: (top, right, bottom, left);
+
+$spaceamounts: (
+  0: 0px,
+  5: 5px,
+  10: 10px,
+  20: 20px
+);

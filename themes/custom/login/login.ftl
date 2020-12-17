@@ -14,7 +14,7 @@
                     </p>
                 </header>
                 <main>
-                    <div class="${properties.kcFormGroupClass!}">
+                    <div class="${properties.kcFormGroupClass!} mb-20">
                         <label for="username" class="${properties.kcLabelClass!}"><#if !realm.loginWithEmailAllowed>${msg("username")}<#elseif !realm.registrationEmailAsUsername>${msg("usernameOrEmail")}<#else>${msg("email")}</#if></label>
 
                         <#if usernameEditDisabled??>
@@ -24,12 +24,12 @@
                         </#if>
                     </div>
 
-                    <div class="${properties.kcFormGroupClass!}">
+                    <div class="${properties.kcFormGroupClass!} mb-10">
                         <label for="password" class="${properties.kcLabelClass!}">${msg("password")}</label>
                         <input tabindex="2" id="password" class="${properties.kcInputClass!}" name="password" type="password" placeholder="********" autocomplete="off" />
                     </div>
                     <#if realm.rememberMe && !usernameEditDisabled??>
-                        <div class="checkbox">
+                        <div>
                             <label class="${properties.gmwLoginRememberMe}">
                                 <#if login.rememberMe??>
                                     <input tabindex="3" id="rememberMe" name="rememberMe" type="checkbox" checked> ${msg("rememberMe")}

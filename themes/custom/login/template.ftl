@@ -47,8 +47,11 @@
     <div class="${properties.kcLoginClass!}">
     
         <#--  LOGIN TITLE  -->
-        <div class="${properties.gmwAsideTitle!}"><#--  Titulo GMW  -->
-
+        <div class="${properties.gmwAside!}"><#--  Titulo GMW  -->
+            <div class="${properties.gmwAsideContent!}">
+                <span class="${properties.gmwAsideTitle}">GMW</span>
+                <span class="${properties.gmwAsideSubtitle}">Backend Solution</span>
+            </div>
         </div>
         <#--  END LOGIN TITLE  -->
 
