@@ -386,10 +386,9 @@ p {
   padding-left: 2rem;
 }
 
-.debug {
+/* .debug {
   outline: 1px solid red;
-}
-
+} */
 .body {
   height: 100vh;
   display: -webkit-box;
