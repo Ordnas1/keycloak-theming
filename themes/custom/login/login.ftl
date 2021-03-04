@@ -13,19 +13,19 @@
                     </p>
                 </header>
                 <main>
-                    <div class="${properties.kcFormGroupClass!} mb-20">
-                        <label for="username" class="${properties.kcLabelClass!}"><#if !realm.loginWithEmailAllowed>${msg("username")}<#elseif !realm.registrationEmailAsUsername>${msg("usernameOrEmail")}<#else>${msg("email")}</#if></label>
+                    <div class="${properties.gmwFormGroup!} mb-20">
+                        <label for="username" class="${properties.gmwLabel!}"><#if !realm.loginWithEmailAllowed>${msg("username")}<#elseif !realm.registrationEmailAsUsername>${msg("usernameOrEmail")}<#else>${msg("email")}</#if></label>
 
                         <#if usernameEditDisabled??>
-                            <input tabindex="1" id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}" placeholder='${msg("usernamePlaceholder")}' type="text" disabled />
+                            <input tabindex="1" id="username" class="${properties.gmwLoginInput!}" name="username" value="${(login.username!'')}" placeholder='${msg("usernamePlaceholder")}' type="text" disabled />
                         <#else>
-                            <input tabindex="1" id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}" placeholder='${msg("usernamePlaceholder")}' type="text" autofocus autocomplete="off" />
+                            <input tabindex="1" id="username" class="${properties.gmwLoginInput!}" name="username" value="${(login.username!'')}" placeholder='${msg("usernamePlaceholder")}' type="text" autofocus autocomplete="off" />
                         </#if>
                     </div>
 
-                    <div class="${properties.kcFormGroupClass!} mb-10">
-                        <label for="password" class="${properties.kcLabelClass!}">${msg("password")}</label>
-                        <input tabindex="2" id="password" class="${properties.kcInputClass!}" name="password" type="password" placeholder="********" autocomplete="off" />
+                    <div class="${properties.gmwFormGroup!} mb-10">
+                        <label for="password" class="${properties.gmwLabel!}">${msg("password")}</label>
+                        <input tabindex="2" id="password" class="${properties.gmwLoginInput!}" name="password" type="password" placeholder="********" autocomplete="off" />
                     </div>
                     <#if realm.rememberMe && !usernameEditDisabled??>
                         <div>
@@ -48,11 +48,11 @@
                     </div>
                      <div id="kc-form-buttons" class="">
                         <input type="hidden" id="id-hidden-input" name="credentialId" <#if auth.selectedCredential?has_content>value="${auth.selectedCredential}"</#if>/>
-                        <input tabindex="4" class="${properties.gmwLoginBtn}" name="login" id="kc-login" type="submit" value="${msg("doLogIn")}"/>
+                        <input tabindex="4" class="login_btn bg-primary-200" name="login" id="kc-login" type="submit" value="${msg("doLogIn")}"/>
                     </div>
                 </footer>
 
-                <#--  <div class="${properties.kcFormGroupClass!} ${properties.kcFormSettingClass!}">
+                <#--  <div class="${properties.gmwFormGroup!} ${properties.kcFormSettingClass!}">
                 </div>  -->
             </form>
         </#if>

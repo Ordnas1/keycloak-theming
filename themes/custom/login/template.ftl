@@ -31,14 +31,22 @@
     </#if>
     <#if properties.scripts?has_content>
         <#list properties.scripts?split(' ') as script>
-            <script src="${url.resourcesPath}/${script}" type="text/javascript"></script>
+            <script src="${url.resourcesPath}/${script}" type="module"></script>
         </#list>
     </#if>
     <#if scripts??>
         <#list scripts as script>
-            <script src="${script}" type="text/javascript"></script>
+            <script src="${script}" type="module"></script>
         </#list>
     </#if>
+    <#if scripts_nomodule??>
+        <#list scripts_nomodule as script>
+            <script src="${script}" nomodule></script>
+        </#list>
+    </#if>
+
+    <#--  Web Components  -->
+    
 </head>
 
 <body class="${properties.kcBodyClass!}">
@@ -99,7 +107,7 @@
                                 </div>
                                 <div class="col-md-10">
                                     <#nested "show-username">
-                                    <div class="${properties.kcFormGroupClass!}">
+                                    <div class="${properties.gmwFormGroup!}">
                                         <div id="kc-username">
                                             <label id="kc-attempted-username">${auth.attemptedUsername}</label>
                                             <a id="reset-login" href="${url.loginRestartFlowUrl}">
@@ -114,7 +122,7 @@
                             </div>
                         <#else>
                             <#nested "show-username">
-                            <div class="${properties.kcFormGroupClass!}">
+                            <div class="${properties.gmwFormGroup!}">
                                 <div id="kc-username">
                                     <label id="kc-attempted-username">${auth.attemptedUsername}</label>
                                     <a id="reset-login" href="${url.loginRestartFlowUrl}">
@@ -140,11 +148,11 @@
                     <#-- during login.                                                                               -->
                     <#if displayMessage && message?has_content && (message.type != 'warning' || !isAppInitiatedAction??)>
                         <div class="${properties.gmwAlertSnackbar}">
-                            <#if message.type = 'success'><span class="${properties.kcFeedbackSuccessIcon!}"></span></#if>
-                            <#if message.type = 'warning'><span class="${properties.kcFeedbackWarningIcon!}"></span></#if>
-                            <#if message.type = 'error'><span class="${properties.kcFeedbackErrorIcon!}"></span></#if>
-                            <#if message.type = 'info'><span class="${properties.kcFeedbackInfoIcon!}"></span></#if>
-                            <span class="pl-15 high-em debug">${kcSanitize(message.summary)?no_esc}</span>
+                            <#if message.type = 'success'><span class="${properties.gmwSuccessIcon!}"></span></#if>
+                            <#if message.type = 'warning'><span class="${properties.gmwWarningIcon!}"></span></#if>
+                            <#if message.type = 'error'><span class="${properties.gmwErrorIcon!}"></span></#if>
+                            <#if message.type = 'info'><span class="${properties.gmwInfoIcon!}"></span></#if>
+                            <span class="pl-15 high-em">${kcSanitize(message.summary)?no_esc}</span>
                         </div>
                     </#if>
                     <#--  END ALERTS  -->
@@ -155,7 +163,7 @@
                     <#if auth?has_content && auth.showTryAnotherWayLink() && showAnotherWayIfPresent>
                     <form id="kc-select-try-another-way-form" action="${url.loginAction}" method="post" <#if displayWide>class="${properties.kcContentWrapperClass!}"</#if>>
                         <div <#if displayWide>class="${properties.kcFormSocialAccountContentClass!} ${properties.kcFormSocialAccountClass!}"</#if>>
-                            <div class="${properties.kcFormGroupClass!}">
+                            <div class="${properties.gmwFormGroup!}">
                                 <input type="hidden" name="tryAnotherWay" value="on" />
                                 <a href="#" id="try-another-way" onclick="document.forms['kc-select-try-another-way-form'].submit();return false;">${msg("doTryAnotherWay")}</a>
                             </div>

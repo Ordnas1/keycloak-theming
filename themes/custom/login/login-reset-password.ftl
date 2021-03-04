@@ -9,15 +9,15 @@
                    ${msg("emailInstruction")}     
                 </p>
             </header>
-            <main class="${properties.kcFormGroupClass!}">
+            <main class="${properties.gmwFormGroup!}">
                 
-                <label for="username" class="${properties.kcLabelClass!}"><#if !realm.loginWithEmailAllowed>${msg("username")}<#elseif !realm.registrationEmailAsUsername>${msg("usernameOrEmail")}<#else>${msg("email")}</#if></label>
+                <label for="username" class="${properties.gmwLabel!}"><#if !realm.loginWithEmailAllowed>${msg("username")}<#elseif !realm.registrationEmailAsUsername>${msg("usernameOrEmail")}<#else>${msg("email")}</#if></label>
                 
                 
                 <#if auth?has_content && auth.showUsername()>
-                    <input type="text" id="username" name="username" class="${properties.kcInputClass!}" autofocus value="${auth.attemptedUsername}" placeholder='${msg("usernamePlaceholder")}'/>
+                    <input type="text" id="username" name="username" class="${properties.gmwLoginInput!}" autofocus value="${auth.attemptedUsername}" placeholder='${msg("usernamePlaceholder")}'/>
                 <#else>
-                    <input type="text" id="username" name="username" class="${properties.kcInputClass!}" autofocus placeholder='${msg("usernamePlaceholder")}'/>
+                    <input type="text" id="username" name="username" class="${properties.gmwLoginInput!}" autofocus placeholder='${msg("usernamePlaceholder")}'/>
                 </#if>
                 
             </main>

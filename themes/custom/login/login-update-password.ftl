@@ -15,14 +15,14 @@
                 <input type="text" id="username" name="username" value="${username}" autocomplete="username" readonly="readonly" style="display:none;"/>
                 <input type="password" id="password" name="password" autocomplete="current-password" style="display:none;"/>
 
-                <div class="${properties.kcFormGroupClass!} mb-20">
-                    <label for="password-new" class="${properties.kcLabelClass!}">${msg("passwordNew")}</label>
-                    <input type="password" id="password-new" name="password-new" class="${properties.kcInputClass!}" autofocus autocomplete="new-password" placeholder="********" />
+                <div class="${properties.gmwFormGroup!} mb-20">
+                    <label for="password-new" class="${properties.gmwLabel!}">${msg("passwordNew")}</label>
+                    <input type="password" id="password-new" name="password-new" class="${properties.gmwLoginInput!}" autofocus autocomplete="new-password" placeholder="********" />
                 </div>
 
-                <div class="${properties.kcFormGroupClass!} mb-20">
-                    <label for="password-confirm" class="${properties.kcLabelClass!}">${msg("passwordConfirm")}</label>
-                    <input type="password" id="password-confirm" name="password-confirm" class="${properties.kcInputClass!}" autocomplete="new-password" placeholder="********" />
+                <div class="${properties.gmwFormGroup!} mb-20">
+                    <label for="password-confirm" class="${properties.gmwLabel!}">${msg("passwordConfirm")}</label>
+                    <input type="password" id="password-confirm" name="password-confirm" class="${properties.gmwLoginInput!}" autocomplete="new-password" placeholder="********" />
                 </div>
             </main>
 
